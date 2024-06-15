@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For that lil midget bitch</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url(https://i.pinimg.com/originals/84/b6/e5/84b6e5f68482842b4fda3b52d57b6f07.png);
+            /*background-color: #f0f0f0;*/
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background-color: #fc94b2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #cf94fc;
+            font-size: 16px;
+        }
+        .buttons button:hover {
+            background-color: #ddd;
+            color: #a83cfb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="box">
+        <p id="question">is this dude hot?</p>
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Johnny_Depp_2020.jpg" alt="Picture">
+        <div class="buttons">
+            <button onclick="handleClick('yes')">Yes</button>
+            <button onclick="handleClick('no')">No</button>
+        </div>
+    </div>
+
+    <script>
+        function handleClick(answer) {
+            const box = document.getElementById('box');
+            const question = document.getElementById('question');
+            const image = document.getElementById('image');
+            const buttons = document.querySelector('.buttons');
+
+            if (answer === 'yes') {
+                question.textContent = 'Ofc you do dumbass, you short ass autistic monkey weirdo. DO BETTER!!!!';
+                image.src = 'https://media.tenor.com/wxjjQc2HzgoAAAAM/cattt.gif';
+            } else {
+                question.textContent = 'GOOD JOB POOKIE YOU ARE HEALING SO HAPPY FOR YOU';
+                image.src = 'https://media.tenor.com/iaEIePNVT6IAAAAe/cat-cat-meme.png';
+            }
+
+            buttons.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
