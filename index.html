@@ -11,8 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: url(https://i.pinimg.com/originals/84/b6/e5/84b6e5f68482842b4fda3b52d57b6f07.png);
-            /*background-color: #f0f0f0;*/
+            background: url(https://i.pinimg.com/originals/84/b6/e5/84b6e5f68482842b4fda3b52d57b6f07.png) repeat;
             font-family: Arial, sans-serif;
         }
         .container {
@@ -45,6 +44,11 @@
             background-color: #ddd;
             color: #a83cfb;
         }
+        @media (max-width: 600px) {
+            body {
+                background: url(https://i.pinimg.com/originals/84/b6/e5/84b6e5f68482842b4fda3b52d57b6f07.png) repeat;
+            }
+        }
     </style>
 </head>
 <body>
@@ -59,7 +63,6 @@
 
     <script>
         function handleClick(answer) {
-            const box = document.getElementById('box');
             const question = document.getElementById('question');
             const image = document.getElementById('image');
             const buttons = document.querySelector('.buttons');
